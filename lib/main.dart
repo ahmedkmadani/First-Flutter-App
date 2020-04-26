@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-  home: Scaffold(
+  home: Home()
+));
+
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
     appBar: AppBar(
       title : Text('my first app'),
       centerTitle: true, 
@@ -9,7 +16,7 @@ void main() => runApp(MaterialApp(
     ),
     body: Center(
       child: Text(
-        "Hello Ninja",
+        "Hello Ninjas !",
         style: TextStyle(
           fontSize : 20.0,
           fontWeight: FontWeight.bold,
@@ -24,5 +31,6 @@ void main() => runApp(MaterialApp(
         child: Text("Click"),
         backgroundColor: Colors.red[600],
       ),
-  )
-));
+  );
+  }
+}
