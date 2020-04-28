@@ -15,10 +15,11 @@ class Home extends StatelessWidget {
       backgroundColor: Colors.red[600],
     ),
     body: Center(
-      child: Image(
-        image: AssetImage('assets/img.png')
-        )
-      
+      child: RaisedButton(
+        onPressed: () {},
+        child: Text("Click me "),
+        color: Colors.lightBlue,
+      ) 
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
